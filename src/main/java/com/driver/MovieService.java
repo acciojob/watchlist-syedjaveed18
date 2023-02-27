@@ -31,11 +31,11 @@ public class MovieService {
         return movieRepository.findDirector(director);
     }
 
-    public ArrayList<String> directorMovies(String director){
+    public List<String> directorMovies(String director){
         return movieRepository.findMoviesOfDirector(director);
     }
 
-    public ArrayList<String> allMovies(){
+    public List<String> allMovies(){
         return movieRepository.allMovies();
     }
 
